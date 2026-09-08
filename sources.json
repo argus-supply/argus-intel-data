@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {"id":"nvd","type":"git","parser":"nvd","url":"https://github.com/fkie-cad/nvd-json-data-feeds.git","min_year":2018,"budget":10000,"provenance":"community NVD mirror; not endorsed by NIST"},
+    {"id":"kev","type":"git","parser":"kev","url":"https://github.com/cisagov/kev-data.git","include":["known_exploited_vulnerabilities.json"],"sparse":["/known_exploited_vulnerabilities.json"],"budget":1,"provenance":"official CISA mirror"},
+    {"id":"osv","type":"osv","url":"https://osv-vulnerabilities.storage.googleapis.com","ecosystems":["npm","PyPI","Go","Maven","crates.io","RubyGems","NuGet","Packagist","GitHub Actions","Hex","Hackage"],"budget":2000,"provenance":"official OSV public export"},
+    {"id":"chaitin","type":"chaitin","url":"https://stack.chaitin.com/api/v2/vuln","budget":100,"reprobe_days":7,"max_list_pages":20,"provenance":"Chaitin public vulnerability API"},
+    {"id":"vulners-enrichment","type":"vulners-enrichment","url":"https://vulners.com","secret":"VULNERS_API_KEY","budget":100,"reprobe_days":7,"provenance":"Vulners authenticated API"}
+  ]
+}
