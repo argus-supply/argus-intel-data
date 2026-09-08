@@ -1,3 +1,5 @@
+> 已停用全量同步与 Release 发布工作流。ARGUS 使用独立按需检索服务（主应用仓库的 services/argus-intel-service）；本目录仅保留旧采集实现供参考，不作为数据分发源。
+
 # ARGUS 漏洞公告与利用情报数据
 
 独立于 ARGUS 应用运行的每日采集与版本发布仓库。每日北京时间 **03:23** 运行，也支持 Actions → **Sync data** → **Run workflow** 手动触发。
